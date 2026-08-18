@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EmailArchiver - Arsip Email Gmail Aman di Komputer Anda</title>
+  <meta name="description" content="EmailArchiver adalah aplikasi Windows untuk memindai, mengarsipkan, memverifikasi, dan membaca kembali email Gmail lama secara lokal.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="EmailArchiver">
+      <img src="logo.png" alt="" class="brand-logo">
+      <span>EmailArchiver</span>
+    </a>
+    <nav class="nav-links" aria-label="Navigasi utama">
+      <a href="#fitur">Fitur</a>
+      <a href="#keamanan">Keamanan</a>
+      <a href="#alur">Alur</a>
+      <a href="#lisensi">Lisensi</a>
+    </nav>
+    <a class="header-action" href="#download">Download</a>
+  </header>
+
+  <main id="top">
+    <section class="hero-section">
+      <div class="hero-copy">
+        <p class="eyebrow">Aplikasi desktop Windows untuk Gmail</p>
+        <h1>EmailArchiver</h1>
+        <p class="hero-lead">Pindahkan email lama dari Gmail ke arsip lokal yang rapi, terverifikasi, dan tetap bisa dibaca tanpa koneksi internet.</p>
+        <div class="hero-actions">
+          <a class="primary-button" href="#download">Unduh aplikasi</a>
+          <a class="secondary-button" href="#fitur">Lihat fitur</a>
+        </div>
+        <div class="trust-row" aria-label="Keunggulan utama">
+          <span>Verifikasi SHA-256</span>
+          <span>Gmail OAuth</span>
+          <span>Protected Archive</span>
+        </div>
+      </div>
+
+      <div class="app-preview" aria-label="Pratinjau aplikasi EmailArchiver">
+        <div class="preview-sidebar">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="preview-window">
+          <div class="preview-topbar">
+            <div>
+              <strong>EmailArchiver</strong>
+              <small>Local Archive</small>
+            </div>
+            <button type="button">Bahasa Indonesia</button>
+          </div>
+          <div class="preview-tabs">
+            <span class="active">Local Archive</span>
+            <span>Scan &amp; Archive</span>
+          </div>
+          <div class="preview-content">
+            <aside>
+              <button class="selected" type="button">All Mail</button>
+              <button type="button">Inbox</button>
+              <button type="button">Sent</button>
+            </aside>
+            <div class="mail-list">
+              <div class="search-line"></div>
+              <article>
+                <span class="date">18 Agu 2026</span>
+                <strong>Kontrak proyek selesai</strong>
+                <p>vendor@example.com</p>
+              </article>
+              <article>
+                <span class="date">05 Jul 2026</span>
+                <strong>Invoice dan lampiran</strong>
+                <p>finance@example.com</p>
+              </article>
+              <article>
+                <span class="date">22 Jun 2026</span>
+                <strong>Rekap komunikasi klien</strong>
+                <p>team@example.com</p>
+              </article>
+            </div>
+            <section class="reader-pane">
+              <span class="reader-chip">HTML aman</span>
+              <h2>Invoice dan lampiran</h2>
+              <p>Email lokal dibaca dari file arsip. Script, popup, dan tracking pixel diblokir secara default.</p>
+              <div class="attachment-row">
+                <span></span>
+                <span></span>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="fitur" class="section feature-section">
+      <div class="section-heading">
+        <p class="eyebrow">Fitur utama</p>
+        <h2>Arsip email lama tanpa kehilangan kendali atas data</h2>
+      </div>
+      <div class="feature-grid">
+        <article>
+          <span class="icon">01</span>
+          <h3>Scan Gmail bertahap</h3>
+          <p>Pilih umur email, pindai metadata, lalu periksa daftar sebelum proses arsip dimulai.</p>
+        </article>
+        <article>
+          <span class="icon">02</span>
+          <h3>Arsip lokal per akun</h3>
+          <p>Email tersimpan dalam struktur folder akun, Received, Sent, dan tahun agar mudah dicadangkan.</p>
+        </article>
+        <article>
+          <span class="icon">03</span>
+          <h3>Reader offline</h3>
+          <p>Buka arsip, cari subjek atau pengirim, baca isi email, dan simpan lampiran tanpa login Gmail ulang.</p>
+        </article>
+        <article>
+          <span class="icon">04</span>
+          <h3>Multiakun</h3>
+          <p>Kelola beberapa akun Gmail dengan folder tujuan dan mode perlindungan yang berbeda.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="keamanan" class="section security-section">
+      <div class="security-copy">
+        <p class="eyebrow">Keamanan dan privasi</p>
+        <h2>Gmail baru disentuh setelah arsip lokal terbukti aman</h2>
+        <p>Email ditulis ke file sementara, dihitung hash SHA-256, lalu diverifikasi setelah menjadi arsip final. Opsi pembersihan memakai Trash, bukan penghapusan permanen.</p>
+      </div>
+      <div class="security-list">
+        <div><strong>OAuth resmi Google</strong><span>Password Gmail tidak pernah diminta atau disimpan.</span></div>
+        <div><strong>Token terenkripsi DPAPI</strong><span>Credential aplikasi dilindungi per pengguna Windows.</span></div>
+        <div><strong>Protected Archive</strong><span>Mode arsip terenkripsi AES-256-GCM untuk email sensitif.</span></div>
+        <div><strong>HTML dibatasi</strong><span>Script, iframe, popup, dan resource jarak jauh diblokir.</span></div>
+      </div>
+    </section>
+
+    <section id="alur" class="section workflow-section">
+      <div class="section-heading">
+        <p class="eyebrow">Cara kerja</p>
+        <h2>Dari Gmail penuh ke arsip lokal yang siap dicari</h2>
+      </div>
+      <div class="workflow">
+        <div><span>1</span><p>Hubungkan akun Gmail melalui OAuth.</p></div>
+        <div><span>2</span><p>Pilih umur email dan folder arsip.</p></div>
+        <div><span>3</span><p>Pindai dan periksa daftar email.</p></div>
+        <div><span>4</span><p>Arsipkan, verifikasi, lalu pindahkan ke Trash bila disetujui.</p></div>
+      </div>
+    </section>
+
+    <section id="lisensi" class="section license-section">
+      <div>
+        <p class="eyebrow">Lisensi</p>
+        <h2>Trial satu bulan, aktivasi offline, tetap bisa membaca arsip</h2>
+      </div>
+      <p>Lisensi penuh terikat Machine ID dan diverifikasi secara lokal. Jika lisensi tidak aktif, aplikasi tetap membuka mode read-only agar pengguna tidak kehilangan akses baca terhadap arsip yang sudah dibuat.</p>
+    </section>
+
+    <section id="download" class="download-section">
+      <div>
+        <p class="eyebrow">Siap digunakan</p>
+        <h2>Rapikan Gmail lama Anda dengan arsip lokal yang dapat dipercaya.</h2>
+      </div>
+      <div class="download-actions">
+        <a class="primary-button" href="../docs/CARA_PUBLISH.md">Panduan publish</a>
+        <a class="secondary-button" href="../README.md">Dokumentasi produk</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>EmailArchiver</span>
+    <nav aria-label="Dokumen legal">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-of-service.html">Terms of Service</a>
+    </nav>
+    <span>Anekajasa Niaga</span>
+  </footer>
+</body>
+</html>
