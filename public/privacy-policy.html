@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="id">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy - Email Archiver</title>
-  <meta name="description" content="Kebijakan privasi Email Archiver mengenai data Gmail, arsip lokal, OAuth, token, lisensi, dan keamanan lampiran.">
+  <meta name="description" content="Privacy Policy for Email Archiver, a Windows desktop app for archiving old Gmail messages to verified local files.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,9 +13,9 @@
       <span class="brand-mark" aria-hidden="true">EA</span>
       <span>Email Archiver</span>
     </a>
-    <nav class="nav-links" aria-label="Navigasi utama">
-      <a href="index.html#fitur">Fitur</a>
-      <a href="index.html#keamanan">Keamanan</a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html#fitur">Purpose</a>
+      <a href="index.html#keamanan">Security</a>
       <a href="terms-of-service.html">Terms</a>
     </nav>
     <a class="header-action" href="index.html#download">Download</a>
@@ -25,62 +25,53 @@
     <section class="legal-hero">
       <p class="eyebrow">Email Archiver</p>
       <h1>Privacy Policy</h1>
-      <p>Terakhir diperbarui: 18 Agustus 2026</p>
+      <p>Last updated: August 18, 2026</p>
     </section>
 
     <article class="legal-content">
       <section>
-        <h2>Ringkasan</h2>
-        <p>Email Archiver adalah aplikasi desktop Windows untuk mengarsipkan email Gmail lama ke komputer pengguna. Aplikasi tidak menyediakan server arsip email dan tidak mengunggah isi email, lampiran, password Gmail, atau arsip lokal ke server milik Email Archiver.</p>
+        <h2>Overview</h2>
+        <p>Email Archiver is a Windows desktop application that helps Gmail users archive old email messages to local files on their own computer. The app does not provide an email archive server and does not upload email content, attachments, Gmail passwords, or local archive files to an Email Archiver server.</p>
       </section>
-
       <section>
-        <h2>Data yang Diproses</h2>
-        <p>Saat pengguna menghubungkan Gmail, aplikasi dapat memproses metadata email, isi email, lampiran, label tertentu, Gmail message ID, alamat pengirim, alamat penerima, tanggal, subjek, dan ukuran perkiraan pesan. Data ini digunakan untuk menampilkan pratinjau, membuat file arsip lokal, dan membaca kembali arsip.</p>
-        <p>Aplikasi juga menyimpan data akun lokal per komputer, termasuk alamat email, status verifikasi, dan hash password. Password aplikasi lokal disimpan sebagai hash, bukan teks asli.</p>
+        <h2>Data Processed</h2>
+        <p>When a user connects Gmail, the app may process email metadata, message content, attachments, labels, Gmail message IDs, sender addresses, recipient addresses, dates, subjects, and estimated message sizes. This data is used to show scan results, create local archive files, and read archived email later.</p>
+        <p>The app may also store local account data on the user's computer, including email address, verification status, and password hash. Local app passwords are stored as hashes, not as plain text.</p>
       </section>
-
       <section>
-        <h2>Penggunaan Google API</h2>
-        <p>Email Archiver menggunakan OAuth Google dan Gmail API untuk membaca email dan, jika pengguna menyetujui, memindahkan pesan ke Trash setelah arsip lokal berhasil diverifikasi. Aplikasi meminta scope Gmail yang diperlukan untuk fungsi tersebut.</p>
-        <p>Password Gmail tidak pernah diminta atau disimpan. Proses login Google dilakukan melalui browser dan mekanisme OAuth.</p>
+        <h2>Google API Use</h2>
+        <p>Email Archiver uses Google OAuth and the Gmail API to read selected Gmail messages and, only when requested by the user, move successfully archived messages to Trash after local verification is complete.</p>
+        <p>The app never asks for or stores the user's Gmail password. Google sign-in happens through the browser and Google's OAuth flow.</p>
       </section>
-
       <section>
-        <h2>Penyimpanan Lokal</h2>
-        <p>Arsip email disimpan di folder yang dipilih pengguna. File arsip dapat berupa Standard Archive dengan format <code>.eml</code> atau Protected Archive dengan format terenkripsi <code>.eml.enc</code>.</p>
-        <p>Token OAuth disimpan secara lokal dalam bentuk terenkripsi menggunakan Windows DPAPI per pengguna Windows. Data akun lokal, daftar akun Gmail, metadata staging, lisensi, dan data trial juga disimpan pada komputer pengguna.</p>
+        <h2>Local Storage</h2>
+        <p>Email archives are stored in a folder chosen by the user. Archive files may be saved as Standard Archive files using the <code>.eml</code> format or as Protected Archive files using the encrypted <code>.eml.enc</code> format.</p>
+        <p>OAuth tokens are stored locally in encrypted form using Windows DPAPI for the current Windows user. Local account data, Gmail account registrations, scan metadata, license data, and trial data are also stored on the user's computer.</p>
       </section>
-
       <section>
         <h2>Protected Archive</h2>
-        <p>Protected Archive menggunakan enkripsi terautentikasi untuk melindungi isi email lokal. Kunci arsip dilindungi oleh Windows DPAPI. Jika file kunci Protected Archive atau profil Windows asal hilang, arsip terenkripsi mungkin tidak dapat dipulihkan.</p>
+        <p>Protected Archive uses authenticated encryption to protect local email content. The archive key is protected by Windows DPAPI. If the Protected Archive key file or the original Windows profile is lost, encrypted archives may not be recoverable.</p>
       </section>
-
       <section>
-        <h2>Gambar Online dan Lampiran</h2>
-        <p>Gambar online di dalam email diblokir secara default untuk mengurangi risiko tracking pixel. Jika pengguna memilih memuat gambar online, aplikasi mengunduh gambar melalui cache lokal dengan pembatasan keamanan.</p>
-        <p>Lampiran dapat dibuka atau disimpan oleh pengguna. Aplikasi menampilkan peringatan sebelum lampiran dibuka karena file lampiran dapat membawa risiko keamanan seperti file lain di komputer.</p>
+        <h2>Remote Images and Attachments</h2>
+        <p>Remote images inside email are blocked by default to reduce tracking pixel risk. If the user chooses to load remote images, the app downloads images through a local cache with security restrictions.</p>
+        <p>Attachments can be opened or saved by the user. The app shows a warning before opening attachments because attachments can carry the same risks as other files on a computer.</p>
       </section>
-
       <section>
-        <h2>Perubahan pada Gmail</h2>
-        <p>Email Archiver tidak memindahkan pesan Gmail ke Trash sebelum salinan lokal dibuat dan diverifikasi. Opsi Trash hanya berjalan jika pengguna mengaktifkannya dan menyetujui prosesnya. Aplikasi tidak menggunakan penghapusan permanen Gmail.</p>
+        <h2>Changes to Gmail</h2>
+        <p>Email Archiver does not move Gmail messages to Trash before the local copy has been created and verified. The Trash option only runs when the user enables it and confirms the process. The app does not use permanent Gmail deletion.</p>
       </section>
-
       <section>
-        <h2>Berbagi Data</h2>
-        <p>Email Archiver tidak menjual data pengguna. Karena aplikasi bekerja secara lokal, isi email dan arsip lokal tidak dikirim ke pihak pengembang oleh aplikasi. Data tetap dapat diproses oleh Google sesuai kebijakan Google saat pengguna menggunakan OAuth dan Gmail API.</p>
+        <h2>Data Sharing</h2>
+        <p>Email Archiver does not sell user data. Because the app works locally, email content and local archives are not sent to the app developer by the app. Data may still be processed by Google according to Google's policies when the user uses OAuth and the Gmail API.</p>
       </section>
-
       <section>
-        <h2>Tanggung Jawab Pengguna</h2>
-        <p>Pengguna bertanggung jawab menjaga folder arsip, backup, file lisensi, akses komputer, dan file kunci Protected Archive. Pengguna juga bertanggung jawab memastikan penggunaan aplikasi mematuhi kebijakan organisasi, peraturan retensi data, dan hukum yang berlaku.</p>
+        <h2>User Responsibilities</h2>
+        <p>Users are responsible for protecting archive folders, backups, license files, computer access, and Protected Archive key files. Users are also responsible for ensuring their use of the app complies with organizational policies, data retention requirements, and applicable law.</p>
       </section>
-
       <section>
-        <h2>Perubahan Kebijakan</h2>
-        <p>Kebijakan ini dapat diperbarui ketika fitur, model lisensi, integrasi provider email, atau persyaratan hukum berubah. Versi terbaru dapat disertakan bersama aplikasi atau dipublikasikan pada halaman produk.</p>
+        <h2>Policy Changes</h2>
+        <p>This policy may be updated when features, licensing, email provider integrations, or legal requirements change. The latest version may be included with the app or published on the product website.</p>
       </section>
     </article>
   </main>
