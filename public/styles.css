@@ -187,6 +187,35 @@ h3 {
   line-height: 1.55;
 }
 
+.identity-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  max-width: 680px;
+  margin: 16px 0 0;
+}
+
+.identity-list div {
+  padding: 12px 14px;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.identity-list dt {
+  margin-bottom: 5px;
+  color: var(--blue-dark);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.identity-list dd {
+  margin: 0;
+  color: #334e5c;
+  line-height: 1.45;
+}
+
 .hero-actions,
 .download-actions {
   display: flex;
@@ -652,6 +681,10 @@ h3 {
   .feature-grid,
   .workflow {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .identity-list {
+    grid-template-columns: 1fr;
   }
 }
 
