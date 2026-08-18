@@ -149,6 +149,14 @@ h3 {
   line-height: 1.45;
 }
 
+.hero-purpose {
+  max-width: 620px;
+  margin-top: 14px;
+  color: #536b78;
+  font-size: 16px;
+  line-height: 1.62;
+}
+
 .hero-actions,
 .download-actions {
   display: flex;
@@ -370,6 +378,12 @@ h3 {
 .section-heading {
   max-width: 780px;
   margin-bottom: 32px;
+}
+
+.section-intro {
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.65;
 }
 
 .feature-grid {
