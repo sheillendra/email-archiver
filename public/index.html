@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="id">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -12,14 +12,14 @@
 <body>
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Email Archiever">
-      <img src="logo.png" alt="" class="brand-logo">
+      <span class="brand-mark" aria-hidden="true">EA</span>
       <span>Email Archiever</span>
     </a>
-    <nav class="nav-links" aria-label="Navigasi utama">
-      <a href="#fitur">Fitur</a>
-      <a href="#keamanan">Keamanan</a>
-      <a href="#alur">Alur</a>
-      <a href="#lisensi">Lisensi</a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#fitur">Purpose</a>
+      <a href="#keamanan">Security</a>
+      <a href="#alur">How it works</a>
+      <a href="#lisensi">License</a>
       <a href="privacy-policy.html">Privacy</a>
     </nav>
     <a class="header-action" href="#download">Download</a>
@@ -30,20 +30,25 @@
       <div class="hero-copy">
         <p class="eyebrow">Gmail email archiving app for Windows</p>
         <h1>Email Archiever</h1>
-        <p class="hero-lead">Email Archiever helps users scan old Gmail messages, save verified copies as local email archive files on their Windows computer, and read those archived emails offline.</p>
-        <p class="hero-purpose">The app connects to Gmail with Google OAuth, downloads selected older messages, verifies the local archive, and only moves Gmail messages to Trash when the user explicitly enables that option.</p>
-        <div class="hero-actions">
-          <a class="primary-button" href="#download">Unduh aplikasi</a>
-          <a class="secondary-button" href="#fitur">Lihat fitur</a>
+        <p class="hero-lead">Email Archiever is a Windows desktop application for Gmail users who want to archive old email messages from Gmail to their own computer.</p>
+        <p class="hero-purpose"><strong>Purpose:</strong> the app scans older Gmail messages, downloads the selected emails, saves verified local archive files, lets users read archived emails offline, and can optionally move successfully archived Gmail messages to Trash only after explicit user approval.</p>
+        <div class="review-note">
+          <strong>Google API use:</strong>
+          <span>Email Archiever uses Google OAuth and the Gmail API to read selected Gmail messages and perform the optional Trash action requested by the user.</span>
         </div>
-        <div class="trust-row" aria-label="Keunggulan utama">
-          <span>Verifikasi SHA-256</span>
+        <div class="hero-actions">
+          <a class="primary-button" href="#download">Download app</a>
+          <a class="secondary-button" href="#fitur">See app purpose</a>
+        </div>
+        <div class="trust-row" aria-label="Key functions">
+          <span>Local email archive</span>
+          <span>SHA-256 verification</span>
           <span>Gmail OAuth</span>
           <span>Protected Archive</span>
         </div>
       </div>
 
-      <div class="app-preview" aria-label="Pratinjau aplikasi Email Archiever">
+      <div class="app-preview" aria-label="Email Archiever app preview">
         <div class="preview-sidebar">
           <span></span>
           <span></span>
@@ -55,7 +60,7 @@
             <strong>Email Archiever</strong>
               <small>Local Archive</small>
             </div>
-            <button type="button">Bahasa Indonesia</button>
+            <button type="button">English</button>
           </div>
           <div class="preview-tabs">
             <span class="active">Local Archive</span>
@@ -70,25 +75,25 @@
             <div class="mail-list">
               <div class="search-line"></div>
               <article>
-                <span class="date">18 Agu 2026</span>
-                <strong>Kontrak proyek selesai</strong>
+                <span class="date">Aug 18, 2026</span>
+                <strong>Completed project contract</strong>
                 <p>vendor@example.com</p>
               </article>
               <article>
-                <span class="date">05 Jul 2026</span>
-                <strong>Invoice dan lampiran</strong>
+                <span class="date">Jul 05, 2026</span>
+                <strong>Invoice and attachment</strong>
                 <p>finance@example.com</p>
               </article>
               <article>
-                <span class="date">22 Jun 2026</span>
-                <strong>Rekap komunikasi klien</strong>
+                <span class="date">Jun 22, 2026</span>
+                <strong>Client communication summary</strong>
                 <p>team@example.com</p>
               </article>
             </div>
             <section class="reader-pane">
-              <span class="reader-chip">HTML aman</span>
-              <h2>Invoice dan lampiran</h2>
-              <p>Email lokal dibaca dari file arsip. Script, popup, dan tracking pixel diblokir secara default.</p>
+              <span class="reader-chip">Safe HTML view</span>
+              <h2>Invoice and attachment</h2>
+              <p>Archived email is read from local files. Scripts, popups, and tracking pixels are blocked by default.</p>
               <div class="attachment-row">
                 <span></span>
                 <span></span>
@@ -131,66 +136,64 @@
 
     <section id="keamanan" class="section security-section">
       <div class="security-copy">
-        <p class="eyebrow">Keamanan dan privasi</p>
-        <h2>Gmail baru disentuh setelah arsip lokal terbukti aman</h2>
-        <p>Email ditulis ke file sementara, dihitung hash SHA-256, lalu diverifikasi setelah menjadi arsip final. Opsi
-          pembersihan memakai Trash, bukan penghapusan permanen.</p>
+        <p class="eyebrow">Security and privacy</p>
+        <h2>Gmail is changed only after the local archive is verified</h2>
+        <p>Email files are written locally, hashed with SHA-256, and verified before any optional Gmail cleanup step. The cleanup option uses Trash, not permanent deletion.</p>
       </div>
       <div class="security-list">
-        <div><strong>OAuth resmi Google</strong><span>Password Gmail tidak pernah diminta atau disimpan.</span></div>
-        <div><strong>Token terenkripsi DPAPI</strong><span>Credential aplikasi dilindungi per pengguna Windows.</span>
+        <div><strong>Google OAuth</strong><span>Gmail passwords are never requested or stored by the app.</span></div>
+        <div><strong>Encrypted local tokens</strong><span>OAuth tokens are protected locally using Windows DPAPI.</span>
         </div>
-        <div><strong>Protected Archive</strong><span>Mode arsip terenkripsi AES-256-GCM untuk email sensitif.</span>
+        <div><strong>Protected Archive</strong><span>Optional encrypted archive mode uses authenticated encryption for sensitive email files.</span>
         </div>
-        <div><strong>HTML dibatasi</strong><span>Script, iframe, popup, dan resource jarak jauh diblokir.</span></div>
+        <div><strong>Restricted HTML</strong><span>Scripts, iframes, popups, and remote resources are blocked by default.</span></div>
       </div>
     </section>
 
     <section id="alur" class="section workflow-section">
       <div class="section-heading">
-        <p class="eyebrow">Cara kerja</p>
-        <h2>Dari Gmail penuh ke arsip lokal yang siap dicari</h2>
+        <p class="eyebrow">How it works</p>
+        <h2>From old Gmail messages to a searchable local archive</h2>
       </div>
       <div class="workflow">
         <div><span>1</span>
-          <p>Hubungkan akun Gmail melalui OAuth.</p>
+          <p>Connect a Gmail account with Google OAuth.</p>
         </div>
         <div><span>2</span>
-          <p>Pilih umur email dan folder arsip.</p>
+          <p>Choose the email age range and local archive folder.</p>
         </div>
         <div><span>3</span>
-          <p>Pindai dan periksa daftar email.</p>
+          <p>Scan Gmail and review the message list before archiving.</p>
         </div>
         <div><span>4</span>
-          <p>Arsipkan, verifikasi, lalu pindahkan ke Trash bila disetujui.</p>
+          <p>Archive, verify, and optionally move verified Gmail messages to Trash.</p>
         </div>
       </div>
     </section>
 
     <section id="lisensi" class="section license-section">
       <div>
-        <p class="eyebrow">Lisensi</p>
-        <h2>Trial satu bulan, aktivasi offline, tetap bisa membaca arsip</h2>
+        <p class="eyebrow">License</p>
+        <h2>One-month trial, offline activation, read-only archive access</h2>
       </div>
-      <p>Lisensi penuh terikat Machine ID dan diverifikasi secara lokal. Jika lisensi tidak aktif, aplikasi tetap
-        membuka mode read-only agar pengguna tidak kehilangan akses baca terhadap arsip yang sudah dibuat.</p>
+      <p>The full license is tied to a Machine ID and verified locally. If the license is inactive, the app can still open local archives in read-only mode so users do not lose access to email archives they already created.</p>
     </section>
 
     <section id="download" class="download-section">
       <div>
-        <p class="eyebrow">Siap digunakan</p>
-        <h2>Rapikan Gmail lama Anda dengan arsip lokal yang dapat dipercaya.</h2>
+        <p class="eyebrow">Ready for review and use</p>
+        <h2>Email Archiever clearly identifies its purpose: archiving old Gmail messages to local files on Windows.</h2>
       </div>
       <div class="download-actions">
-        <a class="primary-button" href="../docs/CARA_PUBLISH.md">Panduan publish</a>
-        <a class="secondary-button" href="../README.md">Dokumentasi produk</a>
+        <a class="primary-button" href="../docs/CARA_PUBLISH.md">Publish guide</a>
+        <a class="secondary-button" href="../README.md">Product documentation</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <span>Email Archiever</span>
-    <nav aria-label="Dokumen legal">
+    <nav aria-label="Legal documents">
       <a href="privacy-policy.html">Privacy Policy</a>
       <a href="terms-of-service.html">Terms of Service</a>
     </nav>
